@@ -87,5 +87,20 @@ namespace DSA
                 return false;
             }
         }
+
+        public void InsertNodeAtBeginning(int start)
+        {
+            if(head is null)
+            {
+                head = new Node(start);
+            }
+            else
+            {
+                var temp = new Node(start);
+                temp.link = head;
+                head = temp;    
+            }
+
+        }
     }
 }

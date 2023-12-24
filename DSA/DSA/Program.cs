@@ -11,7 +11,10 @@
             linkedList.AddNode(3);
             linkedList.PrintAllNodes();
             bool isPresent = linkedList.Search(2);
+            Console.WriteLine("************************");
             Console.WriteLine(isPresent);
+            linkedList.InsertNodeAtBeginning(0);
+            linkedList.PrintAllNodes();
 
         }
 
