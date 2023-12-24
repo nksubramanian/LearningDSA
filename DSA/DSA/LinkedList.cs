@@ -65,5 +65,27 @@ namespace DSA
             printall(head);
 
         }
+
+        public bool Search(int needvalue)
+        {
+            if(head is null)
+            {
+                throw new Exception("Linked List is empty");
+            }
+            else
+            {
+                Node x = head;
+                while(x is not null)
+                {
+                    if(x.value == needvalue)
+                    {
+                        return true;
+                    }
+                    x = x.link;
+
+                }
+                return false;
+            }
+        }
     }
 }

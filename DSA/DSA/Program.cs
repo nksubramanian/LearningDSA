@@ -10,6 +10,8 @@
             linkedList.AddNode(2);
             linkedList.AddNode(3);
             linkedList.PrintAllNodes();
+            bool isPresent = linkedList.Search(2);
+            Console.WriteLine(isPresent);
 
         }
 
