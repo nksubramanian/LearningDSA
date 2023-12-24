@@ -15,6 +15,11 @@
             Console.WriteLine(isPresent);
             linkedList.InsertNodeAtBeginning(0);
             linkedList.PrintAllNodes();
+            linkedList.InsertAfter(83,2);
+            Console.WriteLine("************************");
+            linkedList.PrintAllNodes();
+
+
 
         }
 

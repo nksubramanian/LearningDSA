@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -99,6 +100,33 @@ namespace DSA
                 var temp = new Node(start);
                 temp.link = head;
                 head = temp;    
+            }
+
+        }
+
+
+        public void InsertAfter(int data, int needvalue)
+        {
+            if (head is null)
+            {
+                throw new Exception("Linked List is empty");
+            }
+            else
+            {
+                Node temp = head;
+                while (temp is not null)
+                {
+                    if (temp.value == needvalue)
+                    {
+                        var nodetoinsert = new Node(data);
+                        nodetoinsert.link = temp.link;
+                        temp.link = nodetoinsert;
+
+    
+                    }
+                    temp = temp.link;
+
+                }
             }
 
         }
