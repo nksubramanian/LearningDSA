@@ -5,8 +5,15 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Node node = new Node(5);
-            Console.WriteLine(node.value);
+            LinkedList linkedList = new LinkedList();
+            linkedList.AddNode(1);
+            linkedList.AddNode(2);
+            linkedList.AddNode(3);
+            linkedList.PrintAllNodes();
+
         }
+
+
+
     }
 }
